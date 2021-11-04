@@ -1,0 +1,147 @@
+*{white-space: unset}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+
+.img_background {
+    margin: 0px;
+    padding: 0px;
+    max-width: 1440px;
+    width: 100%;
+
+}
+.text_egg {
+    display: inline-block;
+    max-width: 720px;
+    width: 50%;
+    height:auto;
+}
+
+.img_egg {
+    display: inline-block;
+    max-width: 720px;
+    width: 50%;
+    height:auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'module1a module1b'
+    'module2a module2b'
+    'module3a module3b'
+    'module4 module4'
+    'module5 module5'
+    'footer footer';
+}
+
+#header {
+    grid-area: header;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 60vh;
+}
+
+
+#module1a {
+    grid-area: module1a;
+    padding: 50%;
+
+}
+
+#module1b {
+    grid-area: module1b;
+    background-image: url("../images/desktop/image-transform.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50%;
+}
+#module2a {
+    grid-area: module2a;
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 40vh;
+}
+
+#module2b {
+    grid-area: module2b;
+}
+#module3a {
+    grid-area: module3a;
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+#module3b {
+    grid-area: module3b;
+    background-image: url("../images/desktop/image-photography.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+#module4 {
+    grid-area: module4;
+    height: 50vh;
+
+}
+
+#module5 {
+    grid-area: module5;
+    display: grid;
+    grid-template-areas: 
+    'module5a module5b module5c module5d';
+}
+
+#module5a {
+    grid-area: module5a;
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    height: 30vh;
+}
+
+#module5b {
+    grid-area: module5b;
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    height: 30vh;
+    
+}
+
+#module5c {
+    grid-area: module5c;
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    height: 30vh;
+    
+}
+
+#module5d {
+    grid-area: module5d;
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    height: 30vh;
+
+}
+
+#footer {
+    grid-area: footer;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+}

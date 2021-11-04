@@ -1,0 +1,102 @@
+*{margin:0}
+
+#grid-container{
+    display:grid;
+    grid-template-areas: 
+    'header header header header'
+    'transform-text transform-text transform-img transform-img' 
+    'stand-img stand-img stand-text stand-text'
+    'graphic graphic photography photography'
+    'testimonials testimonials testimonials testimonials'
+    'milk orange cone sugar'
+}
+
+#header {
+    grid-area: header;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    padding: 30%;
+}
+
+#transform-text {
+    grid-area: transform-text;
+    /* padding-top: 30%; */
+}
+#transform-img {
+    grid-area: transform-img;
+    background-image: url("../images/desktop/image-transform.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 45%;
+}
+
+#stand-img {
+    grid-area: stand-img;
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 45%;
+}
+
+#stand-text {
+grid-area: stand-text;
+    /* padding-top: 30%; */
+}
+
+#graphic {
+    grid-area: graphic;
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 45%;
+}
+
+#photography {
+    grid-area: photography;
+    background-image: url("../images/desktop/image-photography.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 45%;
+}
+
+#testimonials {
+    grid-area: testimonials;
+    padding: 30%;
+}
+
+#milk {
+    grid-area: milk;
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40%;
+    padding: 50%;
+}
+
+#orange {
+    grid-area: orange;
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40%;
+    padding: 50%;
+}
+
+#cone {
+    grid-area: cone;
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40%;
+    padding: 50%;
+}
+
+#sugar {
+    grid-area: sugar;
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 40%;
+    padding: 50%;
+}
