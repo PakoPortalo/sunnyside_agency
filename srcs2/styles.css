@@ -9,6 +9,7 @@
     'graphic graphic photography photography'
     'testimonials testimonials testimonials testimonials'
     'milk orange cone sugar'
+    'footer footer footer footer ';
 }
 
 #header {
@@ -16,7 +17,7 @@
     background-image: url("../images/desktop/image-header.jpg");
     background-position: bottom center;
     background-size: cover;
-    padding: 30%;
+    padding: 31%;
 }
 
 #transform-text {
@@ -62,7 +63,7 @@ grid-area: stand-text;
 
 #testimonials {
     grid-area: testimonials;
-    padding: 30%;
+    padding: 29%;
 }
 
 #milk {
@@ -70,33 +71,38 @@ grid-area: stand-text;
     background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
     background-position: center center;
     background-size: cover;
-    height: 40%;
     padding: 50%;
 }
 
 #orange {
     grid-area: orange;
     background-image: url("../images/desktop/image-gallery-orange.jpg");
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
-    height: 40%;
     padding: 50%;
 }
 
 #cone {
     grid-area: cone;
     background-image: url("../images/desktop/image-gallery-cone.jpg");
-    background-position: center center;
     background-size: cover;
-    height: 40%;
-    padding: 50%;
+    background-position: center 90%;
+    position: relative;
+    padding: 69% 25%;
 }
 
 #sugar {
     grid-area: sugar;
     background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
-    background-position: center center;
     background-size: cover;
-    height: 40%;
+    background-position: top center;
     padding: 50%;
+}
+
+#footer {
+    box-sizing: border-box;
+    grid-area: footer;
+    background-color: rgb(152, 196, 183);
+    height: 40%;
+    padding: 10%;
 }
