@@ -1,147 +1,153 @@
-*{white-space: unset}
-
-body {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: "barlow";
+    src: url(../fonts/Barlow-Black.ttf)
 }
 
-h1 {
-    font-size: 100px;
+*{margin:0}
+
+
+
+
+.menu {
+    padding: 4%;
+    background-color: RGB(61,190,255);
+}
+
+.menu-logo {
+    font-family: Barlow;
+    color: white;
+    font-size: 5vw;
 }
 
 
-.img_background {
-    margin: 0px;
-    padding: 0px;
-    max-width: 1440px;
-    width: 100%;
+/* Grid */
 
-}
-.text_egg {
-    display: inline-block;
-    max-width: 720px;
-    width: 50%;
-    height:auto;
-}
-
-.img_egg {
-    display: inline-block;
-    max-width: 720px;
-    width: 50%;
-    height:auto;
-}
-
-.grid-container {
-    display: grid;
+#grid-container{
+    display:grid;
     grid-template-areas: 
-    'header header'
-    'module1a module1b'
-    'module2a module2b'
-    'module3a module3b'
-    'module4 module4'
-    'module5 module5'
-    'footer footer';
+    'header header header header'
+    'transform-text transform-text transform-img transform-img' 
+    'stand-img stand-img stand-text stand-text'
+    'graphic graphic photography photography'
+    'testimonials testimonials testimonials testimonials'
+    'milk orange cone sugar'
+    'footer footer footer footer ';
+}
+
+@media (max-width: 400px) {
+    #grid-container{
+        display:grid;
+        grid-template-areas: 
+        'header header'
+        'transform-img transform-img'
+        'transform-text transform-text'
+        'stand-img stand-img'
+        'stand-text stand-text'
+        'graphic graphic'
+        'photography photography'
+        'testimonials testimonials'
+        'milk orange'
+        'cone sugar'
+        'footer footer';
+    }
+    
 }
 
 #header {
     grid-area: header;
     background-image: url("../images/desktop/image-header.jpg");
-    background-position: center bottom;
+    background-position: bottom center;
     background-size: cover;
-    height: 60vh;
+    padding: 31%;
 }
 
+#transform-text {
+    grid-area: transform-text;
+    padding: 45%;
 
-#module1a {
-    grid-area: module1a;
-    padding: 50%;
-
+    /* padding-top: 30%; */
 }
-
-#module1b {
-    grid-area: module1b;
+#transform-img {
+    grid-area: transform-img;
     background-image: url("../images/desktop/image-transform.jpg");
     background-position: center center;
     background-size: cover;
-    padding: 50%;
-}
-#module2a {
-    grid-area: module2a;
-    background-image: url("../images/desktop/image-stand-out.jpg");
-    background-position: center bottom;
-    background-size: cover;
-    height: 40vh;
+    padding: 45%;
 }
 
-#module2b {
-    grid-area: module2b;
+#stand-img {
+    grid-area: stand-img;
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 45%;
 }
-#module3a {
-    grid-area: module3a;
+
+#stand-text {
+grid-area: stand-text;
+    padding: 45%;
+
+    /* padding-top: 30%; */
+}
+
+#graphic {
+    grid-area: graphic;
     background-image: url("../images/desktop/image-graphic-design.jpg");
     background-position: center center;
     background-size: cover;
-    height: 40vh;
+    padding: 45%;
 }
 
-#module3b {
-    grid-area: module3b;
+#photography {
+    grid-area: photography;
     background-image: url("../images/desktop/image-photography.jpg");
     background-position: center center;
     background-size: cover;
-    height: 40vh;
-}
-#module4 {
-    grid-area: module4;
-    height: 50vh;
-
+    padding: 45%;
 }
 
-#module5 {
-    grid-area: module5;
-    display: grid;
-    grid-template-areas: 
-    'module5a module5b module5c module5d';
+#testimonials {
+    grid-area: testimonials;
+    padding: 29%;
 }
 
-#module5a {
-    grid-area: module5a;
+#milk {
+    grid-area: milk;
     background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
-    /* background-position: center center; */
+    background-position: center center;
     background-size: cover;
-    height: 30vh;
+    padding: 50%;
 }
 
-#module5b {
-    grid-area: module5b;
+#orange {
+    grid-area: orange;
     background-image: url("../images/desktop/image-gallery-orange.jpg");
-    /* background-position: center center; */
+    background-position: center top;
     background-size: cover;
-    height: 30vh;
-    
+    padding: 50%;
 }
 
-#module5c {
-    grid-area: module5c;
+#cone {
+    grid-area: cone;
     background-image: url("../images/desktop/image-gallery-cone.jpg");
-    /* background-position: center center; */
     background-size: cover;
-    height: 30vh;
-    
+    background-position: center 90%;
+    position: relative;
+    padding: 50% 25%;
 }
 
-#module5d {
-    grid-area: module5d;
+#sugar {
+    grid-area: sugar;
     background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
-    /* background-position: center center; */
     background-size: cover;
-    height: 30vh;
-
+    background-position: top center;
+    padding: 50%;
 }
 
 #footer {
+    box-sizing: border-box;
     grid-area: footer;
-    align-items: center;
-    text-align: center;
-    height: 15vh;
+    background-color: rgb(152, 196, 183);
+    height: 40%;
+    padding: 10%;
 }
